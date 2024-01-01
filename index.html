@@ -8,6 +8,24 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&family=Source+Sans+3:wght@200&display=swap" rel="stylesheet">
+
+        <!-- Event snippet for Book Appointment conversion page
+    In your html page, add the snippet and call gtag_report_conversion when someone clicks on the chosen link or button. -->
+    <script>
+        function gtag_report_conversion(url) {
+        var callback = function () {
+            if (typeof(url) != 'undefined') {
+            window.location = url;
+            }
+        };
+        gtag('event', 'conversion', {
+            'send_to': 'AW-10948260626/Van_CP6ozoQZEJLmxOQo',
+            'event_callback': callback
+        });
+        return false;
+        }
+    </script>
+    
 </head>
 
 <!-- Google tag (gtag.js) -->
@@ -148,8 +166,8 @@
             <!-- Calendly link widget begin -->
             <link href="https://assets.calendly.com/assets/external/widget.css" rel="stylesheet">
             <script src="https://assets.calendly.com/assets/external/widget.js" type="text/javascript" async></script>
-            <a href="" class="yellow-button" onclick="Calendly.initPopupWidget({url: 'https://calendly.com/adamriosphotography/individual-headshot-session?hide_gdpr_banner=1&background_color=1a1a1a&text_color=ffffff&primary_color=cda909'});return false;">Schedule Your Individual Session Now</a>
-            <!-- Calendly link widget end -->
+            <a href="" class="yellow-button" onclick="Calendly.initPopupWidget({url: 'https://calendly.com/adamriosphotography/individual-headshot-session?hide_gdpr_banner=1&background_color=1a1a1a&text_color=ffffff&primary_color=cda909'}); gtag_report_conversion('https://calendly.com/adamriosphotography/individual-headshot-session'); return false;">Schedule Your Individual Session Now</a>
+    <!-- Calendly link widget end -->
         </div>
         <div class="pricing">
             <!-- Calendly link widget begin -->
