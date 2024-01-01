@@ -64,7 +64,7 @@ body {
     font-size: 1.5em;
     line-height: 1.5;
     font-weight: 300;
-    width: 75%; /* Container takes up 75% of the screen width */
+    width: 90%; /* Container takes up 75% of the screen width */
     margin: 0 auto; /* Centers the container */
     font-size: 1em; /* Default font size */
     max-width: 800px; /* Maximum width of the container */
@@ -80,7 +80,7 @@ body {
     font-size: 1.5em;
     line-height: 1.5;
     font-weight: 300;
-    width: 75%; /* Container takes up 75% of the screen width */
+    width: 90%; /* Container takes up 75% of the screen width */
     margin: 0 auto; /* Centers the container */
     font-size: 1em; /* Default font size */
     max-width: 800px; /* Maximum width of the container */
