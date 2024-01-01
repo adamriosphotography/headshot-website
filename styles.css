@@ -1,0 +1,196 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: black; /* Black background */
+}
+
+.photo-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 3 columns */
+    gap: 8px; /* Spacing between photos */
+    padding: 15px;
+}
+
+.pricing-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* 3 columns */
+    gap: 8px; /* Spacing between photos */
+    padding: 15px;
+}
+
+.pricing {
+    overflow: hidden;
+    color: white;
+    text-align: center;
+}
+
+.photo-grid-5 {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr); /* 3 columns */
+    gap: 8px; /* Spacing between photos */
+    padding: 15px;
+}
+
+.photo {
+    border: 1px solid rgb(205, 169, 9); /* White border */
+    overflow: hidden;
+}
+
+.photo img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.logo-container {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.logo-container img {
+    width: 33%; /* Logo takes up a third of the screen width */
+    max-width: 200px; /* Adjust this value as needed */
+    height: auto;
+}
+
+
+.text-container {
+    text-align: left;
+    color: #EFEFEF;
+    font-family: 'Open Sans', sans-serif;
+    letter-spacing: 0rem;
+    width: 100%;
+    font-size: 1.5em;
+    line-height: 1.5;
+    font-weight: 300;
+    width: 75%; /* Container takes up 75% of the screen width */
+    margin: 0 auto; /* Centers the container */
+    font-size: 1em; /* Default font size */
+    max-width: 800px; /* Maximum width of the container */
+    min-width: 300px; /* Minimum width of the container */
+}
+
+.text-container-center {
+    text-align: center;
+    color: #EFEFEF;
+    font-family: 'Open Sans', sans-serif;
+    letter-spacing: 0rem;
+    width: 100%;
+    font-size: 1.5em;
+    line-height: 1.5;
+    font-weight: 300;
+    width: 75%; /* Container takes up 75% of the screen width */
+    margin: 0 auto; /* Centers the container */
+    font-size: 1em; /* Default font size */
+    max-width: 800px; /* Maximum width of the container */
+    min-width: 300px; /* Minimum width of the container */
+}
+
+.yellow-button {
+    display: inline-block;
+    background-color: #cda909; /* Yellow background */
+    color: white; /* White text */
+    padding: 10px 20px; /* Top and bottom padding of 10px, left and right padding of 20px */
+    border-radius: 15px; /* Rounded corners */
+    text-decoration: none; /* Removes underline from the link */
+    font-weight: bold; /* Makes the text bold */
+    transition: background-color 0.3s; /* Smooth transition for hover effect */
+}
+
+.yellow-button:hover {
+    background-color: #b38b07; /* Darker yellow on hover */
+}
+
+@media (max-width: 768px) {
+    .text-container {
+        font-size: 1em; /* Smaller font size on smaller screens */
+    }
+}
+
+@media (max-width: 480px) {
+    .text-container {
+        font-size: 0.8em; /* Even smaller font size on very small screens */
+    }
+}
+
+
+.header {
+    text-align: center;
+    color: #EFEFEF;
+    font-family: 'Open Sans', sans-serif;
+    letter-spacing: -0.1rem;
+    width: 100%;
+    font-size: 2.25em;
+    line-height: 1;
+    font-weight: 800;
+    margin-bottom: 30px;
+}
+
+.subheader {
+    text-align: center;
+    color: #EFEFEF;
+    font-family: 'Open Sans', sans-serif;
+    letter-spacing: -0.05rem;
+    width: 100%;
+    font-size: 1.5em;
+    line-height: 1.5;
+    font-weight: 700;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.subheader2 {
+    text-align: center;
+    color: #EFEFEF;
+    font-family: 'Open Sans', sans-serif;
+    letter-spacing: -0.05rem;
+    width: 100%;
+    font-size: 1.5em;
+    line-height: 1.5;
+    font-weight: 700;
+    margin-top: 30px;
+    margin-bottom: 5px;
+}
+
+.text-container ol li {
+    margin-bottom: 10px; /* Adds space below each list item */
+}
+
+.review-container {
+    background: black;
+    border: 1px solid rgb(205, 169, 9); 
+    padding: 10px;
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    box-shadow: 2px 2px 8px rgba(0,0,0,0.1);
+}
+
+.review {
+    font-style: italic;
+    color: white;
+    margin-bottom: 10px;
+}
+
+.reviewer {
+    font-weight: bold;
+    color: #a1a1a1;
+    text-align: right;
+    font-style: italic;
+}
+
+.stars {
+    color: rgb(205, 169, 9);
+    font-size: 20px;
+}
+
+.site-footer {
+    color: white; /* White text */
+    text-align: center;
+    padding: 20px 0; /* Padding above and below the text */
+    margin-top: 40px; /* Margin above the footer */
+    font-size: 16px;
+}
